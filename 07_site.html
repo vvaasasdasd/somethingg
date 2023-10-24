@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <style>
+        .header {
+            border-bottom: 2px solid gray;
+        }
+        .card{
+            background-color: #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .color{
+            color: red;
+        }
+    </style>
+</head> 
+<body>
+    <!-- <div id="header" class="header">
+        <h2>My Site</h2>
+    </div> ниже вариант, лучший для поиска сайта-->
+    <header id="header" class="header">
+        <h2>My Site</h2>
+    </header>
+    <!-- <div id="navigation">
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+        </ul>
+    </div> ниже вариант, лучший для поиска сайта -->
+    <nav id="navigation">
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <!-- <div id="block1" class="card">
+        <h3>Block 1</h3>
+        <p>Lorem ipsum, 
+            <div class="color">dolor sit amet consectetur adipisicing elit.</div> 
+            Officia at impedit labore quisquam dolores fugit.</p>
+    </div>
+    <div id="block2" class="card">
+        <h3>Block 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Harum magnam <span class="color">perspiciatis incidunt</span> ducimus unde dolorum 
+            impedit deserunt consectetur sunt reprehenderit!</p>
+    </div> 
+        для повторяющихся - article. их можно сгруппировать в section:-->
+    <section>
+        <article id="block1" class="card">
+            <h3>Block 1</h3>
+            <p>Lorem ipsum, 
+                <div class="color">dolor sit amet consectetur adipisicing elit.</div> 
+                Officia at impedit labore quisquam dolores fugit.</p>
+        </article>
+        <article id="block2" class="card">
+            <h3>Block 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Harum magnam <span class="color">perspiciatis incidunt</span> ducimus unde dolorum 
+                impedit deserunt consectetur sunt reprehenderit!</p>
+        </article>
+    </section>
+    <hr>
+    <!-- footer = div только лучше для поиска -->
+    <footer id="footer">
+        <h4>Contact me</h4>
+        <ul>
+            <li>tg</li>
+            <li>ds</li>
+            <li>vk</li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+<!-- классы class для стилистики(может быть присвоен нескольким блокам),
+id - для уникального блока
+может быть 2 класса для одного блока -->
+
+<!-- div переносит на строчку, а span - нет РАЗЛИЧИЯ -->
+
+<!-- 
+
+div#name - создать уже с id
+div. (span.)- создать уже с классом 
+ul.list - список с классом list
+ul#qwer - список с id=qwer 
+
+-->
+
+<!-- с div можно только через точку или решетку (. + tab и # + tab) -->
+
+<!-- в тег aside лучше засовывать какие то боковые менюшки -->
