@@ -3,98 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
-    <style>
-        .header {
-            border-bottom: 2px solid gray;
-        }
-        .card{
-            background-color: #eee;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        .color{
-            color: red;
-        }
-    </style>
-</head> 
+    <meta name="tags, tags, tags">
+    <title>My site</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="classes.css">
+    <link rel="stylesheet" href="adaptive.css">
+</head>
 <body>
-    <!-- <div id="header" class="header">
-        <h2>My Site</h2>
-    </div> ниже вариант, лучший для поиска сайта-->
-    <header id="header" class="header">
-        <h2>My Site</h2>
-    </header>
-    <!-- <div id="navigation">
-        <ul>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 2</a></li>
-            <li><a href="#">Item 3</a></li>
-        </ul>
-    </div> ниже вариант, лучший для поиска сайта -->
-    <nav id="navigation">
-        <ul>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 2</a></li>
-            <li><a href="#">Item 3</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <!-- <div id="block1" class="card">
-        <h3>Block 1</h3>
-        <p>Lorem ipsum, 
-            <div class="color">dolor sit amet consectetur adipisicing elit.</div> 
-            Officia at impedit labore quisquam dolores fugit.</p>
+    <div class="info">
+        <img class="catimg" src="cat.jpg" alt="cat image">
+        <div class="info-text">
+            <h1>John Watson</h1>
+            <p>This cat has <strong>not</strong> autism. He lied a little bit</p>
+            <h3>Socials</h3>
+            <p class="contacts">
+                <a href="https://telegram.com">Tekegram</a> |
+                <a href="https://vk.com">VK</a> |
+                <a href="https://discord.com">Discord</a> 
+            </p>
+        </div>
     </div>
-    <div id="block2" class="card">
-        <h3>Block 2</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Harum magnam <span class="color">perspiciatis incidunt</span> ducimus unde dolorum 
-            impedit deserunt consectetur sunt reprehenderit!</p>
-    </div> 
-        для повторяющихся - article. их можно сгруппировать в section:-->
-    <section>
-        <article id="block1" class="card">
-            <h3>Block 1</h3>
-            <p>Lorem ipsum, 
-                <div class="color">dolor sit amet consectetur adipisicing elit.</div> 
-                Officia at impedit labore quisquam dolores fugit.</p>
-        </article>
-        <article id="block2" class="card">
-            <h3>Block 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Harum magnam <span class="color">perspiciatis incidunt</span> ducimus unde dolorum 
-                impedit deserunt consectetur sunt reprehenderit!</p>
-        </article>
-    </section>
-    <hr>
-    <!-- footer = div только лучше для поиска -->
-    <footer id="footer">
-        <h4>Contact me</h4>
-        <ul>
-            <li>tg</li>
-            <li>ds</li>
-            <li>vk</li>
-        </ul>
-    </footer>
+    <div class="card">
+        <h3>This table does not carry any semantic load</h3>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Diagnosis</th>
+            </thead>
+            <tbody>
+                <td>John</td>
+                <td>Watson</td>
+                <td>Okay</td>
+            </tbody>
+        </table>
+    </div>
+    <div class="contactform">
+        <form action="/">
+            <h3>Contact here</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="text">Your name:</label>
+                    <input type="text" placeholder="Enter name...">
+                </div>
+                <div class="form-group">
+                    <label for="text">Your email:</label>
+                    <input type="email" placeholder="Enter email...">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="text">Your message:</label>
+                <textarea name="" id="" cols="30" rows="3" placeholder="Enter your message..."></textarea>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
-
-<!-- классы class для стилистики(может быть присвоен нескольким блокам),
-id - для уникального блока
-может быть 2 класса для одного блока -->
-
-<!-- div переносит на строчку, а span - нет РАЗЛИЧИЯ -->
-
-<!-- 
-
-div#name - создать уже с id
-div. (span.)- создать уже с классом 
-ul.list - список с классом list
-ul#qwer - список с id=qwer 
-
--->
-
-<!-- с div можно только через точку или решетку (. + tab и # + tab) -->
-
-<!-- в тег aside лучше засовывать какие то боковые менюшки -->

@@ -1,0 +1,23 @@
+@media (max-width: 520px){
+    .info{
+        display: block;
+        text-align: center;
+    }
+    .info p{
+        margin:auto;
+    }
+    .card{
+        text-align: center;
+    }
+    .card table{
+        margin: auto;
+    }
+    .form-row{
+        display: block;
+    }
+    .form-row .form-group{
+        margin-top: 15px;
+        width: 100%;
+        margin-right: 0;
+    }
+}
