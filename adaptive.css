@@ -20,4 +20,7 @@
         width: 100%;
         margin-right: 0;
     }
+    .contactform h3{
+        text-align: center;
+    }
 }
